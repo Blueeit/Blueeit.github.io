@@ -3,76 +3,109 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>오픈잡 Open Job - Blueeit</title>
 
   <link rel="stylesheet" href="styles/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/common.js"></script>
+  
+  <title>오픈잡 Open Job - Blueeit</title>
 </head>
 <body>
-  <nav>
-    <div class="logo-wrap">
-      <img>
+  <div id="intro" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="nav-wrap" id="navbar">
+      <div class="logo-wrap">
+        <a href="index.html">
+          <img src="images/logo-blueeit-wh.svg" alt="logo">
+        </a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#intro">소개</a></li>
+          <li><a href="#service">서비스</a></li>
+          <li><a href="#support">지원</a></li>
+        </ul>
+      </nav>
     </div>
-    <div>
-      <ul>
-        <li>
-          <a href="#" id="">소개</a>
-        </li>
-        <li>
-          <a href="#" id="">기술 및 서비스</a>
-        </li>
-        <li>
-          <a href="#" id="">문의</a>
-        </li>
-      </ul>
+    <div class="hero-content-wrap">
+      <video autoplay muted loop playsinline class="background-video">
+        <source src="images/vedio/hero-building.mp4" type="video/mp4">
+      </video>
+      <div class="hero-content">
+        <h1>오픈잡 Open Job</h1>
+        <p>풀타임이 아니어도 OK! 원하는 요일과 시간에 맞춘 유연 근무 매칭 플랫폼</p>
+        <a class="cta" href="#">앱 다운로드</a>
+      </div>
     </div>
-  </nav>
+  </div>
 
-  <header>
-    <h1>오픈잡 Open Job</h1>
-    <p>풀타임이 아니어도 OK! 원하는 요일과 시간에 맞춘 유연 근무 매칭 플랫폼</p>
-    <a class="cta" href="#">앱 다운로드</a>
-  </header>
-
-  <section class="section">
+  <section class="section openjob-service-wrap" id="service">
     <h2>누구를 위한 서비스인가요?</h2>
     <div class="features">
       <div class="feature">
+        <div>
+          <img src="images/icon-group.svg" alt="icon">
+        </div>
         <h3>구직자</h3>
         <p>내가 일할 수 있는 시간과 요일만 등록하면, 조건에 맞는 채용 정보가 자동 추천!</p>
       </div>
       <div class="feature">
+        <div>
+          <img src="images/icon-company.svg" alt="icon">
+        </div>
         <h3>채용자</h3>
         <p>필요한 시간대, 요일에 일할 수 있는 인재만 보기. 시간낭비 없는 스마트 채용!</p>
       </div>
     </div>
   </section>
 
-  <section class="section">
+  <section class="section openjob-feature-wrap">
     <h2>오픈잡의 특징</h2>
     <div class="features">
       <div class="feature">
+        <div>
+          <img src="images/feature01.jpg" alt="feature">
+        </div>
         <h3>유연한 근무시간 매칭</h3>
-        <p>1주일 중 원하는 요일과 시간 단위로 근무 조건 설정 가능</p>
+        <p>일주일 중 원하는 요일과 시간 단위로 근무 조건 설정 가능</p>
       </div>
       <div class="feature">
+        <div>
+          <img src="images/feature02-1.jpg" alt="feature">
+        </div>
         <h3>실시간 프로필 매칭</h3>
         <p>구직자와 채용자 간 조건 기반 매칭으로 시간 절약</p>
       </div>
       <div class="feature">
+        <div>
+          <img src="images/feature03.jpg" alt="feature">
+        </div>
         <h3>모바일 중심 UX</h3>
         <p>언제 어디서나 앱으로 간편하게 프로필 관리 및 채용 진행</p>
       </div>
     </div>
   </section>
 
-  <section class="section">
+  <section class="section" id="support">
     <h2>지금 시작해 보세요</h2>
     <p>유연 근무의 미래, 블릿의 <strong>오픈잡</strong>에서 만나보세요.</p>
-    <a class="cta" href="#">앱 다운로드</a>
+    <p>
+      <a class="cta" href="#">문의하기</a>
+      <a class="cta" href="#" style="margin-left: 12px;">앱 다운로드</a>
+    </p>
   </section>
 
   <footer>
-    &copy; 2025 Blueeit 블릿. All rights reserved. | contact@blueeit.com
+    <div>
+      &copy; 2025 Blueeit 블릿. All rights reserved.
+    </div>
+    <div>
+      <ul>
+        <li>(주)블릿 | 대표이사 : 김기영 | 사업자 등록번호 : 288-81-00948</li>
+        <li>경기도 성남시 대왕판교 815 기업 지원 허브 261-2호 | 대표전화 : 1800-6719 | contact@blueeit.com</li>
+        <li></li>
+    </ul>              
+    </div>
   </footer>
 </body>
 </html>
