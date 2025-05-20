@@ -1,16 +1,16 @@
 @charset "utf-8";
 
-*{
+* {
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
 
 body {
+    font-family: 'Noto Sans KR', sans-serif;
     margin: 0;
     padding:0;
     background-color: #f9f9f9;
-    color: #333;
-    
+    color: #333;   
 }
 
 a {
