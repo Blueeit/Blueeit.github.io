@@ -98,7 +98,7 @@ img {vertical-align: top;}
     font-size: 1.1rem;
 }
 
-.cta {
+.cta-btn {
     margin-top: 1rem;
     display: inline-block;
     padding: 0.75rem 1.5rem;
@@ -107,6 +107,24 @@ img {vertical-align: top;}
     border-radius: 6px;
     text-decoration: none;
     font-weight: bold;
+}
+
+.icon-download {
+    width:20px;height:20px;
+    display:inline-block;
+    background:url(/images/icon-arrow-downward.png) no-repeat center center;
+    background-size:contain;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.icon-shortcut {
+    width:20px;height:20px;
+    display:inline-block;
+    background:url(/images/icon-arrow-outward.png) no-repeat center center;
+    background-size:contain;
+    vertical-align: middle;
+    margin-left: 5px;
 }
 
 .section {
