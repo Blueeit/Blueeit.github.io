@@ -109,19 +109,18 @@ img {vertical-align: top;}
     font-weight: bold;
 }
 
-.icon-download {
-    width:20px;height:20px;
-    display:inline-block;
-    background:url(/images/icon-arrow-downward.png) no-repeat center center;
-    background-size:contain;
-    vertical-align: middle;
-    margin-left: 5px;
+.app-download-btn-wrap>.cta-btn {
+    background-color: rgba(0, 12, 30, 0.8);
 }
+
+.app-download-btn-wrap>.cta-btn:hover {
+    background-color: rgba(33, 33, 33, 0.8);
+} 
 
 .icon-shortcut {
     width:20px;height:20px;
     display:inline-block;
-    background:url(/images/icon-arrow-outward.png) no-repeat center center;
+    background:url(/images/common/icon-arrow-outward.png) no-repeat center center;
     background-size:contain;
     vertical-align: middle;
     margin-left: 5px;
@@ -160,6 +159,25 @@ img {vertical-align: top;}
     background-color: #eaeff7;
     padding: 6px;
     border-radius: 100%;
+}
+
+.openjob-console-wrap{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.openjob-console-wrap img{
+    width:100%;
+    max-width:600px;
+}
+
+.openjob-console-exp {
+    width:100%;
+    max-width:300px;
+    text-align:left;
+    margin-left:35px;
 }
 
 .openjob-service-wrap .features {
