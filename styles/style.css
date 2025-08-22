@@ -176,12 +176,8 @@ img {vertical-align: top;}
     text-align:left;
 }
 
-.openjob-airesume-wrap>div{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 0 65px;
+.openjob-airesume-wrap {
+    background-color:#eaeff7;
 }
 
 .openjob-airesume-tit h2{
