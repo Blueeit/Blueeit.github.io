@@ -133,10 +133,6 @@ img {vertical-align: top;}
     margin-top: 3rem;
 }
 
-.section h2 {
-    padding-bottom:48px;
-}
-
 .features {
     display: flex;
     flex-wrap: wrap;
@@ -166,6 +162,7 @@ img {vertical-align: top;}
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    gap:0 65px;
 }
 
 .openjob-console-wrap img{
@@ -175,9 +172,25 @@ img {vertical-align: top;}
 
 .openjob-console-exp {
     width:100%;
-    max-width:300px;
+    max-width:305px;
     text-align:left;
-    margin-left:35px;
+}
+
+.openjob-airesume-wrap>div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0 65px;
+}
+
+.openjob-airesume-tit h2{
+    font-size:30px;
+    letter-spacing: 12px;
+}
+
+.openjob-airesume-tit p{
+    font-size:14px;
 }
 
 .openjob-service-wrap .features {
