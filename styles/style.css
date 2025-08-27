@@ -157,7 +157,7 @@ img {vertical-align: top;}
     border-radius: 100%;
 }
 
-.openjob-console-wrap{
+.openjob-console-wrap, .openjob-airesume-wrap{
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -167,26 +167,19 @@ img {vertical-align: top;}
 
 .openjob-console-wrap img{
     width:100%;
-    max-width:600px;
+    max-width:560px;
 }
 
-.openjob-console-exp {
+.openjob-console-exp, .openjob-airesume-exp {
     width:100%;
-    max-width:305px;
+    max-width:335px;
     text-align:left;
 }
 
-.openjob-airesume-wrap {
-    background-color:#eaeff7;
-}
-
-.openjob-airesume-tit h2{
-    font-size:30px;
-    letter-spacing: 12px;
-}
-
-.openjob-airesume-tit p{
-    font-size:14px;
+.openjob-airesume-wrap img {
+    width:100%;
+    max-width:455px;
+    max-height: 380px;
 }
 
 .openjob-service-wrap .features {
