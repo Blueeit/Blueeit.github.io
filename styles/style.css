@@ -165,7 +165,7 @@ img {vertical-align: top;}
     gap:0 65px;
 }
 
-.openjob-console-wrap img{
+.openjob-console-wrap img, .openjob-airesume-wrap img{
     width:100%;
     max-width:560px;
 }
@@ -174,12 +174,6 @@ img {vertical-align: top;}
     width:100%;
     max-width:335px;
     text-align:left;
-}
-
-.openjob-airesume-wrap img {
-    width:100%;
-    max-width:455px;
-    max-height: 380px;
 }
 
 .openjob-service-wrap .features {
