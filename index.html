@@ -1,157 +1,253 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Open Graph (카카오톡, 페이스북, 네이버 블로그 등) -->
-  <meta property="og:title" content="AI 이력서 생성 취업 매칭 블릿 오픈잡" />
-  <meta property="og:description" content="구직자와 구인 기업의 AI 파트너. 유연한 열린 취업 매칭 서비스를 제공합니다." />
-  <meta property="og:image" content="https://www.blueeit.com/images/common/blueeit-home.png" />
-  <meta property="og:url" content="https://www.blueeit.com" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Open Graph (카카오톡, 페이스북, 네이버 블로그 등) -->
+    <meta property="og:title" content="AI 이력서 생성 취업 매칭 블릿 오픈잡" />
+    <meta
+      property="og:description"
+      content="구직자와 구인 기업의 AI 파트너. 유연한 열린 취업 매칭 서비스를 제공합니다."
+    />
+    <meta
+      property="og:image"
+      content="https://www.blueeit.com/images/common/blueeit-home.png"
+    />
+    <meta property="og:url" content="https://www.blueeit.com" />
 
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="AI 이력서 생성 취업 매칭 블릿 오픈잡" />
-  <meta name="twitter:description" content="구직자와 구인 기업의 AI 파트너. 유연한 열린 취업 매칭 서비스를 제공합니다." />
-  <meta name="twitter:image" content="https://www.blueeit.com/images/common/blueeit-home.png" />
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="AI 이력서 생성 취업 매칭 블릿 오픈잡" />
+    <meta
+      name="twitter:description"
+      content="구직자와 구인 기업의 AI 파트너. 유연한 열린 취업 매칭 서비스를 제공합니다."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.blueeit.com/images/common/blueeit-home.png"
+    />
 
-  <link rel="stylesheet" href="styles/style.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap">
-  
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="js/common.js"></script>
-  
-  <title>오픈잡 Open Job - Blueeit</title>
-</head>
-<body>
-  <div class="hero">
-    <div class="hero-overlay"></div>
-    <div class="nav-wrap" id="navbar">
-      <div class="logo-wrap">
-        <a href="index.html">
-          <img src="images/common/logo-blueeit-wh.svg" alt="logo">
-        </a>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="#">소개</a></li>
-          <li><a href="#">서비스</a></li>
-          <li><a href="https://web.blueeit.com/support">지원</a></li>
-          <li><a href="https://web.blueeit.com/console">채용관리 콘솔</a></li>
-        </ul>
-      </nav>
-    </div>
-    <div class="hero-content-wrap">
-      <video autoplay muted loop playsinline class="background-video">
-        <source src="images/video/hero-building.mp4" type="video/mp4">
-      </video>
-      <div class="hero-content">
-        <h1>오픈잡 Open Job</h1>
-        <p>풀타임이 아니어도 OK! 원하는 요일과 시간에 맞춘 유연 근무 매칭 플랫폼</p>
-        <div class="app-download-btn-wrap">
-          <a class="cta-btn" href="https://apps.apple.com/app/id6745934545" target="_blank"><img src="images/common/icon-applekorea.png" width="30px"> App Store</a>
-          <a class="cta-btn" href="https://play.google.com/store/apps/details?id=com.blueeit.ojd" target="_blank" style="margin-left: 12px;"><img src="images/common/icon-googleplay.png" width="30px">Google Play</a>
-        </div> 
-      </div>
-    </div>
-  </div>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap"
+    />
 
-  <section class="section openjob-service-wrap">
-    <h2>누구를 위한 서비스인가요?</h2>
-    <div class="features">
-      <div class="feature">
-        <div>
-          <img src="images/common/icon-group.svg" alt="icon">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/common.js"></script>
+
+    <title>오픈잡 Open Job - Blueeit</title>
+  </head>
+  <body>
+    <div class="hero">
+      <div class="hero-overlay"></div>
+      <div class="nav-wrap" id="navbar">
+        <div class="logo-wrap">
+          <a href="index.html">
+            <img src="images/common/logo-blueeit-wh.svg" alt="logo" />
+          </a>
         </div>
-        <h3>구직자</h3>
-        <p>내가 일할 수 있는 시간과 요일만 등록하면, 조건에 맞는 채용 정보가 자동 추천!</p>
+        <nav>
+          <ul>
+            <li><a href="#">소개</a></li>
+            <li><a href="#">서비스</a></li>
+            <li><a href="https://web.blueeit.com/support">지원</a></li>
+            <li><a href="https://web.blueeit.com/console">채용관리 콘솔</a></li>
+          </ul>
+        </nav>
       </div>
-      <div class="feature">
-        <div>
-          <img src="images/common/icon-company.svg" alt="icon">
+      <div class="hero-content-wrap">
+        <video autoplay muted loop playsinline class="background-video">
+          <source src="images/video/hero-building.mp4" type="video/mp4" />
+        </video>
+        <div class="hero-content">
+          <h1>오픈잡 Open Job</h1>
+          <p>
+            풀타임이 아니어도 OK! 원하는 요일과 시간에 맞춘 유연 근무 매칭
+            플랫폼
+          </p>
+          <div class="app-download-btn-wrap">
+            <a
+              class="cta-btn cta-btn--blackTP"
+              href="https://apps.apple.com/app/id6745934545"
+              target="_blank"
+              ><img src="images/common/icon-applekorea.png" width="30px" /> App
+              Store</a
+            >
+            <a
+              class="cta-btn cta-btn--blackTP"
+              href="https://play.google.com/store/apps/details?id=com.blueeit.ojd"
+              target="_blank"
+              style="margin-left: 12px"
+              ><img
+                src="images/common/icon-googleplay.png"
+                width="30px"
+              />Google Play</a
+            >
+          </div>
         </div>
-        <h3>채용자</h3>
-        <p>필요한 시간대, 요일에 일할 수 있는 인재만 보기. 시간낭비 없는 스마트 채용!</p>
       </div>
     </div>
-  </section>
 
-  <section class="section openjob-console-wrap">
-    <div>
-      <img src="images/common/img-console02.png" alt="openjob-console">  
-    </div>
-    <div class="openjob-console-exp">
+    <section class="section openjob-service-wrap">
+      <h2>누구를 위한 서비스인가요?</h2>
+      <div class="features">
+        <div class="feature">
+          <div>
+            <img src="images/common/icon-group.svg" alt="icon" />
+          </div>
+          <h3>구직자</h3>
+          <p>
+            내가 일할 수 있는 시간과 요일만 등록하면, 조건에 맞는 채용 정보가
+            자동 추천!
+          </p>
+        </div>
+        <div class="feature">
+          <div>
+            <img src="images/common/icon-company.svg" alt="icon" />
+          </div>
+          <h3>채용자</h3>
+          <p>
+            필요한 시간대, 요일에 일할 수 있는 인재만 보기. 시간낭비 없는 스마트
+            채용!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section openjob-airesume-wrap">
+      <div class="section-flex">
+        <div class="section-txt">
+          <h2>AI로 전문가처럼 이력서를 작성해보세요</h2>
+          <ul class="list">
+            <li class="list-item">
+              <span class="item-content"
+                >온라인에서도 쉽고 빠르게 이력서 완성</span
+              >
+            </li>
+            <li class="list-item">
+              <span class="item-content"
+                >항목별 AI 코칭으로 설득력 있는 문장 구성</span
+              >
+            </li>
+            <li class="list-item">
+              <span class="item-content"
+                >다양한 디자인 템플릿으로 이력서 스타일 선택 가능</span
+              >
+            </li>
+            <li class="list-item">
+              <span class="item-content">PDF 파일로 즉시 저장 가능</span>
+            </li>
+          </ul>
+          <div>
+            <a
+              class="cta-btn cta-btn--blue"
+              href="https://web.blueeit.com/console"
+              >내 AI 이력서 만들기</a
+            >
+          </div>
+        </div>
+        <div>
+          <img
+            src="images/common/img-ai-resume03.png"
+            alt="ai resume"
+            class="section-img"
+          />
+        </div>
+      </div>
+      <div class="openjob-airesume">
+        <h2>다양한 디자인의 템플릿을 선택해보세요</h2>
+        <div class="template-bg">
+          <img
+            src="./images/common/img-ai-resume04.png"
+            alt="ai resume"
+            class="section-img ai-template-img"
+          />
+        </div>
+        <div>
+          <a
+            class="cta-btn cta-btn--black"
+            href="https://web.blueeit.com/console"
+            >내 AI 이력서 만들기</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-flex openjob-console-wrap">
       <div>
-        <h2>모바일에서 어디서나 간편하게<br>PC에서 키보드로 편리하게</h2>
-        <p><strong>채용관리 콘솔</strong>을 사용해보세요.<br>
-        편리하게 채용을 등록하고, 채용일정을 관리할수 있어요.
-        </p>
-        <a class="cta-btn" href="https://web.blueeit.com/console">채용관리 콘솔<span class="icon-shortcut"></span></a>
+        <img
+          src="images/common/img-console02.png"
+          alt="openjob-console"
+          class="section-img"
+        />
       </div>
-    </div>
-  </section>
-
-  <section class="section openjob-airesume-wrap">
-    <div class="openjob-airesume-exp">
-      <div class="openjob-airesume-tit">
-        <h2>AI로 이력서 작성</h2>
-        <p>오픈잡에서 전문가처럼 이력서를 작성할 수 있도록 도와드립니다.</p>
-      </div>
-      <div class="app-download-btn-wrap">
-        <a class="cta-btn" href="https://web.blueeit.com/console">AI 이력서 작성하기</a>
-      </div>
-    </div>
-    <div>
-      <img src="images/common/img-ai-resume02.png" alt="ai resume">
-    </div>
-  </section>
-
-  <section class="section openjob-feature-wrap">
-    <h2>오픈잡의 특징</h2>
-    <div class="features">
-      <div class="feature">
+      <div class="openjob-console-exp section-txt">
         <div>
-          <img src="images/common/img-feature01.jpg" alt="feature">
+          <h2>모바일에서 어디서나 간편하게<br />PC에서 키보드로 편리하게</h2>
+          <p>
+            <strong>채용관리 콘솔</strong>을 사용해보세요.<br />
+            편리하게 채용을 등록하고, 채용일정을 관리할수 있어요.
+          </p>
+          <a
+            class="cta-btn cta-btn--blue"
+            href="https://web.blueeit.com/console"
+            >채용관리 콘솔<span class="icon-shortcut"></span
+          ></a>
         </div>
-        <h3>유연한 근무시간 매칭</h3>
-        <p>일주일 중 원하는 요일과 시간 단위로 근무 조건 설정 가능</p>
       </div>
-      <div class="feature">
-        <div>
-          <img src="images/common/img-feature02-1.jpg" alt="feature">
-        </div>
-        <h3>실시간 프로필 매칭</h3>
-        <p>구직자와 채용자 간 조건 기반 매칭으로 시간 절약</p>
-      </div>
-      <div class="feature">
-        <div>
-          <img src="images/common/img-feature03.jpg" alt="feature">
-        </div>
-        <h3>모바일 중심 UX</h3>
-        <p>언제 어디서나 앱으로 간편하게 프로필 관리 및 채용 진행</p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="section">
-    <h2>지금 시작해 보세요</h2>
-    <p>유연 근무의 미래, 블릿의 <strong>오픈잡</strong>에서 만나보세요.</p>
-    <p>
-      <a class="cta-btn" href="https://web.blueeit.com/support">문의하기</a>
-      <a class="cta-btn" href="#" style="margin-left: 12px;">서비스 바로가기<span class="icon-shortcut"></span></a>
-    </p>
-  </section>
+    <section class="section openjob-feature-wrap">
+      <h2>오픈잡의 특징</h2>
+      <div class="features">
+        <div class="feature">
+          <div>
+            <img src="images/common/img-feature01.jpg" alt="feature" />
+          </div>
+          <h3>유연한 근무시간 매칭</h3>
+          <p>일주일 중 원하는 요일과 시간 단위로 근무 조건 설정 가능</p>
+        </div>
+        <div class="feature">
+          <div>
+            <img src="images/common/img-feature02-1.jpg" alt="feature" />
+          </div>
+          <h3>실시간 프로필 매칭</h3>
+          <p>구직자와 채용자 간 조건 기반 매칭으로 시간 절약</p>
+        </div>
+        <div class="feature">
+          <div>
+            <img src="images/common/img-feature03.jpg" alt="feature" />
+          </div>
+          <h3>모바일 중심 UX</h3>
+          <p>언제 어디서나 앱으로 간편하게 프로필 관리 및 채용 진행</p>
+        </div>
+      </div>
+    </section>
 
-  <footer>
-    <div>
-      &copy; 2025 Blueeit 블릿. All rights reserved.
-    </div>
-    <div>
-      <ul>
-        <li>(주)블릿 | 대표이사 : 김기영 | 사업자 등록번호 : 288-81-00948</li>
-        <li>support@blueeit.com</li>
-    </ul>              
-    </div>
-  </footer>
-</body>
+    <section class="section section-blue">
+      <h2>지금 시작해 보세요</h2>
+      <p>유연 근무의 미래, 블릿의 <strong>오픈잡</strong>에서 만나보세요.</p>
+      <p>
+        <a class="cta-btn cta-btn--blue" href="https://web.blueeit.com/support"
+          >문의하기</a
+        >
+        <a class="cta-btn cta-btn--black" href="#" style="margin-left: 12px"
+          >서비스 바로가기<span class="icon-shortcut"></span
+        ></a>
+      </p>
+    </section>
+
+    <footer>
+      <div>&copy; 2025 Blueeit 블릿. All rights reserved.</div>
+      <div>
+        <ul>
+          <li>
+            (주)블릿 대표이사 : 김기영 | 사업자 등록번호 : 288-81-00948 |
+            support@blueeit.com
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
 </html>

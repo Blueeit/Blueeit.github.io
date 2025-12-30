@@ -1,5 +1,6 @@
 @charset "utf-8";
 
+/*공통사항*/
 * {
     box-sizing: border-box;
     scroll-behavior: smooth;
@@ -28,6 +29,88 @@ ul li {
 }
 
 img {vertical-align: top;}
+
+.cta-btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border:0.5px solid #eee;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+}
+
+.cta-btn--blue {
+    background-color: #2b70f8;
+    color: #fff;
+}
+
+.cta-btn--blue:hover {
+    background-color: #548bf9;
+}
+
+.cta-btn--black {
+    background-color: rgb(0, 12, 30, 0.8);
+    color: #fff;
+}
+
+.cta-btn--black:hover {
+    background-color: rgb(33, 33, 33, 0.8);
+}
+
+.cta-btn--blackTP {
+    background-color: rgba(0, 12, 30, 0.8);
+    color: #fff;
+}
+
+.cta-btn--blackTP:hover {
+    background-color: rgba(33, 33, 33, 0.8);
+}
+
+.section {
+    padding: 3rem 1.5rem;
+    text-align: center;
+    background-color: #fff;
+    margin-top: 3rem;
+}
+
+.section-flex{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap:0 65px;
+}
+
+.section-img{
+    width:100%;
+    max-width:560px;
+    margin: 20px 0;
+}
+
+.section-txt{
+    width:100%;
+    max-width:335px;
+    text-align:left;
+}
+
+.section-blue {
+    background-color:#eaeff7;
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.feature {
+    max-width: 300px;
+}
 
 .hero {
     position:relative;
@@ -98,25 +181,6 @@ img {vertical-align: top;}
     font-size: 1.1rem;
 }
 
-.cta-btn {
-    margin-top: 1rem;
-    display: inline-block;
-    padding: 0.75rem 1.5rem;
-    background-color: #2b70f8;
-    color: white;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.app-download-btn-wrap>.cta-btn {
-    background-color: rgba(0, 12, 30, 0.8);
-}
-
-.app-download-btn-wrap>.cta-btn:hover {
-    background-color: rgba(33, 33, 33, 0.8);
-} 
-
 .icon-shortcut {
     width:20px;height:20px;
     display:inline-block;
@@ -124,26 +188,6 @@ img {vertical-align: top;}
     background-size:contain;
     vertical-align: middle;
     margin-left: 5px;
-}
-
-.section {
-    padding: 3rem 1.5rem;
-    text-align: center;
-    background-color: #fff;
-    margin-top: 3rem;
-}
-
-.features {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-    max-width: 1000px;
-    margin: auto;
-}
-
-.feature {
-    max-width: 300px;
 }
 
 .openjob-service-wrap {
@@ -157,23 +201,51 @@ img {vertical-align: top;}
     border-radius: 100%;
 }
 
-.openjob-console-wrap, .openjob-airesume-wrap{
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap:0 65px;
+.openjob-airesume-wrap .section-flex {
+    margin-bottom:80px;
 }
 
-.openjob-console-wrap img, .openjob-airesume-wrap img{
-    width:100%;
-    max-width:560px;
+.openjob-airesume-wrap .section-flex img {
+    height: 435px;
 }
 
-.openjob-console-exp, .openjob-airesume-exp {
-    width:100%;
-    max-width:335px;
-    text-align:left;
+.openjob-airesume-wrap .list {
+    margin:0 0 16px 0;
+}
+
+.openjob-airesume-wrap .list-item{
+    margin : 0 0 0 8px;
+    line-height: 2.5rem;
+}
+
+.openjob-airesume-wrap .list-item::before{
+    content :"";
+    display:inline-block;
+    width:9px;
+    height:17px;
+    border-right: 3px solid #2b70f8;
+    border-bottom: 3px solid #2b70f8;
+    transform:rotate(47deg);
+    margin:2px 22px 0 0;
+    box-sizing: border-box;
+}
+
+.openjob-airesume-wrap .openjob-airesume h2 {
+    margin:0;
+    color:#666;
+    padding-bottom: 10px;
+}
+
+.openjob-airesume-wrap .ai-template-img{
+    position:relative;
+    max-width: 890px;
+    margin:0;
+    padding: 25px 0 30px;
+    border-top:1px solid #ddd;
+}
+
+.openjob-airesume-wrap .openjob-airesume .cta-btn {
+    padding:12px 48px;
 }
 
 .openjob-service-wrap .features {
@@ -184,11 +256,6 @@ img {vertical-align: top;}
     width:300px;
     height:200px;
     border-radius:3px;
-}
-
-.section:last-of-type{
-    padding: 5rem 1.5rem;
-    background-color:#eaeff7;
 }
 
 footer {
