@@ -9,4 +9,9 @@ $(document).ready(function () {
       //$('.logo-wrap img').attr('src', 'images/logo-txt-bk.svg');
     }
   });
+
+  $('.mobile-menu-btn').on('click', function () {
+    $(this).toggleClass('active');
+    $('nav').stop().slideToggle(200);
+  });
 });

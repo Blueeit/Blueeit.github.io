@@ -32,6 +32,10 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/common.js"></script>
@@ -47,14 +51,23 @@
             <img src="images/common/logo-blueeit-wh.svg" alt="logo" />
           </a>
         </div>
-        <nav>
-          <ul>
-            <li><a href="#">소개</a></li>
-            <li><a href="#">서비스</a></li>
-            <li><a href="https://web.blueeit.com/support">지원</a></li>
-            <li><a href="https://web.blueeit.com/console">채용관리 콘솔</a></li>
-          </ul>
-        </nav>
+        <div>
+          <button class="mobile-menu-btn" arial-label="메뉴 열기">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <nav>
+            <ul>
+              <li><a href="#">소개</a></li>
+              <li><a href="#">서비스</a></li>
+              <li><a href="https://web.blueeit.com/support">지원</a></li>
+              <li>
+                <a href="https://web.blueeit.com/console">채용관리 콘솔</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
       <div class="hero-content-wrap">
         <video autoplay muted loop playsinline class="background-video">
@@ -66,23 +79,24 @@
             풀타임이 아니어도 OK! 원하는 요일과 시간에 맞춘 유연 근무 매칭
             플랫폼
           </p>
-          <div class="app-download-btn-wrap">
+          <div class="cta-btn-wrap">
             <a
-              class="cta-btn cta-btn--blackTP"
+              class="cta-btn cta-btn--blackTP cta-btn-wrap"
               href="https://apps.apple.com/app/id6745934545"
               target="_blank"
               ><img src="images/common/icon-applekorea.png" width="30px" /> App
-              Store</a
+              Store <span class="material-symbols-outlined">download</span></a
             >
             <a
-              class="cta-btn cta-btn--blackTP"
+              class="cta-btn cta-btn--blackTP cta-btn-wrap"
               href="https://play.google.com/store/apps/details?id=com.blueeit.ojd"
               target="_blank"
               style="margin-left: 12px"
               ><img
                 src="images/common/icon-googleplay.png"
                 width="30px"
-              />Google Play</a
+              />Google Play
+              <span class="material-symbols-outlined">download</span></a
             >
           </div>
         </div>
@@ -141,9 +155,10 @@
           </ul>
           <div>
             <a
-              class="cta-btn cta-btn--blue"
+              class="cta-btn cta-btn--blue cta-btn-wrap"
               href="https://web.blueeit.com/console"
-              >내 AI 이력서 만들기</a
+              >내 AI 이력서 만들기
+              <span class="material-symbols-outlined">arrow_outward</span></a
             >
           </div>
         </div>
@@ -163,12 +178,11 @@
             alt="ai resume"
             class="section-img ai-template-img"
           />
-        </div>
-        <div>
           <a
-            class="cta-btn cta-btn--black"
+            class="cta-btn cta-btn--black cta-btn-wrap"
             href="https://web.blueeit.com/console"
-            >내 AI 이력서 만들기</a
+            >내 AI 이력서 만들기
+            <span class="material-symbols-outlined">arrow_outward</span></a
           >
         </div>
       </div>
@@ -190,10 +204,11 @@
             편리하게 채용을 등록하고, 채용일정을 관리할수 있어요.
           </p>
           <a
-            class="cta-btn cta-btn--blue"
+            class="cta-btn cta-btn--blue cta-btn-wrap"
             href="https://web.blueeit.com/console"
-            >채용관리 콘솔<span class="icon-shortcut"></span
-          ></a>
+            >채용관리 콘솔
+            <span class="material-symbols-outlined">arrow_outward</span></a
+          >
         </div>
       </div>
     </section>
@@ -228,14 +243,18 @@
     <section class="section section-blue">
       <h2>지금 시작해 보세요</h2>
       <p>유연 근무의 미래, 블릿의 <strong>오픈잡</strong>에서 만나보세요.</p>
-      <p>
+      <div class="cta-btn-wrap">
         <a class="cta-btn cta-btn--blue" href="https://web.blueeit.com/support"
           >문의하기</a
         >
-        <a class="cta-btn cta-btn--black" href="#" style="margin-left: 12px"
-          >서비스 바로가기<span class="icon-shortcut"></span
-        ></a>
-      </p>
+        <a
+          class="cta-btn cta-btn--black cta-btn-wrap"
+          href="#"
+          style="margin-left: 12px"
+          >서비스 바로가기
+          <span class="material-symbols-outlined">arrow_outward</span></a
+        >
+      </div>
     </section>
 
     <footer>
