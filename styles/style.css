@@ -274,6 +274,10 @@ img {vertical-align: top;}
     width:210px;
 }
 
+.openjob-console-wrap .section-img {
+    max-width:445px;
+}
+
 .openjob-service-wrap .features {
     gap:100px;
 }
