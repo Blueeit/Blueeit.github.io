@@ -12,6 +12,6 @@ $(document).ready(function () {
   //nav 모바일
   $('.mobile-menu-btn').on('click', function () {
     $(this).toggleClass('active');
-    $('nav-wrap nav').toggleClass('is-open');
+    $('.nav-wrap nav').toggleClass('is-open');
   });
 });
