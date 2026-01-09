@@ -1,17 +1,17 @@
 $(document).ready(function () {
+    //스크롤시 nav 배경색 변경
   $(window).on('scroll', function () {
     if ($(window).scrollTop() > 50) {
       $('#navbar').addClass('scrolled');
-      // $('.logo-wrap img').attr('src', 'images/logo-txt-wh.svg');
-
     } else {
       $('#navbar').removeClass('scrolled');
-      //$('.logo-wrap img').attr('src', 'images/logo-txt-bk.svg');
+
     }
   });
 
+  //nav 모바일
   $('.mobile-menu-btn').on('click', function () {
     $(this).toggleClass('active');
-    $('nav').stop().slideToggle(200);
+    $('nav-wrap nav').toggleClass('is-open');
   });
 });

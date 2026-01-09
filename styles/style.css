@@ -166,10 +166,45 @@ img {vertical-align: top;}
     color:#fff;
 }
 
+.nav-wrap nav{
+    display:block;
+}
+
 .nav-wrap nav ul li{
     display:inline-block;
     margin-left:12px;
     font-size:14px;
+}
+
+.nav-wrap .mobile-menu-btn {
+    display:none;
+    width:24px;
+    height:18px;
+    position:relative;
+    cursor:pointer;
+    background: none;
+    border:0;
+}
+
+.nav-wrap .mobile-menu-btn span{
+    position:absolute;
+    left:0;
+    width:100%;
+    height:2px;
+    background: #fff;
+    transition: .2s;
+}
+
+.nav-wrap .mobile-menu-btn span:nth-child(1) {
+    top:0;
+}
+
+.nav-wrap .mobile-menu-btn span:nth-child(2) {
+    top:8px;
+}
+
+.nav-wrap .mobile-menu-btn span:nth-child(3) {
+    bottom:0;
 }
 
 .nav-wrap .logo-wrap img{
@@ -296,37 +331,6 @@ footer {
     color: #777;
 }
 
-.nav-wrap .mobile-menu-btn {
-    display:none;
-    width:24px;
-    height:18px;
-    position:relative;
-    cursor:pointer;
-    background: none;
-    border:0;
-}
-
-.nav-wrap .mobile-menu-btn span{
-    position:absolute;
-    left:0;
-    width:100%;
-    height:2px;
-    background: #fff;
-    transition: .2s;
-}
-
-.nav-wrap .mobile-menu-btn span:nth-child(1) {
-    top:0;
-}
-
-.nav-wrap .mobile-menu-btn span:nth-child(2) {
-    top:8px;
-}
-
-.nav-wrap .mobile-menu-btn span:nth-child(3) {
-    bottom:0;
-}
-
 /*모바일 버전*/
 @media (max-width: 468px) {
   body {
@@ -342,6 +346,10 @@ footer {
     top:0;
     left:0;
     background-color:#212121de;
+  }
+
+  nav.is-open {
+    display:block;
   }
 
   .nav-wrap nav ul {
@@ -362,7 +370,7 @@ footer {
     z-index:1;
   }
 
- /* 열렸을 때 */
+ /* 열렸을 때 X 아이콘 바뀜*/
   .mobile-menu-btn.active span:nth-child(1) {
     transform: rotate(45deg);
     top: 8px;
