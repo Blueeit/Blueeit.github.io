@@ -352,16 +352,16 @@ footer {
     display:block;
   }
 
-  .nav-wrap nav ul {
+  .nav-wrap nav .nav-menu {
     padding: 70px 0 0 40px;
   }
 
-   .nav-wrap nav ul li{
+   .nav-wrap .nav-menu li{
     display: block;
     margin-bottom: 17px;
    }
 
-   .nav-wrap nav ul li:hover {
+   .nav-wrap .nav-menu li:hover {
     color:#777;
    }
 

@@ -14,4 +14,15 @@ $(document).ready(function () {
     $(this).toggleClass('active');
     $('.nav-wrap nav').toggleClass('is-open');
   });
+
+  //nav 베경 클릭 > 닫기
+  $('.nav-overlay').on('click', function() {
+    $(this).removeClass('is-open');
+    $('.mobile-menu-btn').removeClass('active');
+  })
+
+  //nav menu 클릭시 닫힘 방지
+  $('.nav-overlay .nav-menu').on('click', function(e) {
+    e.stopPropagation();
+  });
 });
