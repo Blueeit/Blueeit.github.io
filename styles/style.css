@@ -236,8 +236,9 @@ img {vertical-align: top;}
 .cta-btn-wrap {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-items: center;
+    gap: 5px;
 }
 
 .hero .hero-content .cta-btn {
@@ -322,6 +323,19 @@ img {vertical-align: top;}
     height:200px;
     border-radius:3px;
 }
+
+.openjob-contact img{
+    max-width: 480px;
+}
+
+.openjob-contact .section-txt>div>div {
+    display:flex;
+    gap:10px;
+}
+
+.openjob-contact>.section-txt>div>a {
+    width:100%;
+} 
 
 footer {
     display: flex;
