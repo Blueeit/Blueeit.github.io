@@ -45,7 +45,7 @@ ul li {
 img {vertical-align: top;}
 
 .cta-btn {
-    width:180px;
+    min-width: 130px;
     display: block;
     margin-top: 1rem;
     padding: 10px;
@@ -264,16 +264,16 @@ img {vertical-align: top;}
     max-width: 435px;
 }
 
-.openjob-airesume-wrap .list {
+.list {
     margin:0 0 16px 0;
 }
 
-.openjob-airesume-wrap .list-item{
+.list-item{
     margin : 0 0 0 8px;
     line-height: 2.5rem;
 }
 
-.openjob-airesume-wrap .list-item::before{
+.list-item::before{
     content :"";
     display:inline-block;
     width:9px;
@@ -328,14 +328,14 @@ img {vertical-align: top;}
     max-width: 480px;
 }
 
-.openjob-contact .section-txt>div>div {
+.openjob-contact .section-flex:nth-of-type(1) {
+    margin-bottom:80px;
+}
+
+.openjob-contact .section-flex:nth-of-type(2) .section-txt div{
     display:flex;
     gap:10px;
 }
-
-.openjob-contact>.section-txt>div>a {
-    width:100%;
-} 
 
 footer {
     display: flex;
