@@ -42,7 +42,10 @@ ul li {
     list-style-type: none;
 }
 
-img {vertical-align: top;}
+img {
+    vertical-align: top;
+    max-width:100%;
+}
 
 .cta-btn {
     min-width: 130px;
@@ -59,12 +62,12 @@ img {vertical-align: top;}
 }
 
 .cta-btn--blue {
-    background-color: #2b70f8;
+    background-color: #1f5ed6;
     color: #fff;
 }
 
 .cta-btn--blue:hover {
-    background-color: #548bf9;
+    background-color: #174bb8;
 }
 
 .cta-btn--black {
@@ -318,9 +321,15 @@ img {vertical-align: top;}
     gap:100px;
 }
 
-.openjob-feature-wrap .feature img{
+.openjob-feature-wrap .feature .img-box {
     width:300px;
     height:200px;
+    overflow:hidden;
+}
+
+.openjob-feature-wrap .feature img{
+    width:300px;
+    height:auto;
     border-radius:3px;
 }
 
@@ -342,7 +351,7 @@ footer {
     justify-content: space-between;
     padding: 18px 32px;
     font-size: 12px;
-    color: #777;
+    color: #555;
 }
 
 /*모바일 버전*/
