@@ -65,8 +65,6 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/common.js" defer></script>
 
-    <!-- html 읽고 style.css바로 받아오기 -->
-    <link rel="preload" as="style" href="styles/style.css" />
     <link rel="stylesheet" href="styles/style.css" />
     <link
       rel="stylesheet"
@@ -100,11 +98,33 @@
             </button>
             <nav class="nav-overlay">
               <ul class="nav-menu">
-                <li><a href="#">소개</a></li>
-                <li><a href="#">서비스</a></li>
-                <li><a href="https://web.blueeit.com/support">지원</a></li>
-                <li>
-                  <a href="https://web.blueeit.com/console">서비스로그인</a>
+                <li class="main-nav nav-menu-service">
+                  <span>서비스 소개</span>
+                  <ul class="sub-nav">
+                    <li>
+                      <a href="#section-ai-resume">AI 이력서</a>
+                    </li>
+                    <li>
+                      <a href="#section-recuitment">채용 관리</a>
+                    </li>
+                    <li>
+                      <a href="#section-contract">전자 계약</a>
+                    </li>
+                    <li>
+                      <a href="#section-schedule-management"
+                        >근무 스케줄 관리</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="main-nav">
+                  <a href="https://web.blueeit.com/console">로그인</a>
+                </li>
+                <li class="main-nav">
+                  <a href="https://web.blueeit.com/support">지원문의</a>
+                </li>
+                <li class="main-nav nav-menu-signup">
+                  <a href="https://web.blueeit.com/join/signup">무료체험</a>
                 </li>
               </ul>
             </nav>
@@ -116,10 +136,7 @@
           </video>
           <div class="hero-content">
             <h1>오픈잡 Open Job</h1>
-            <p>
-              풀타임이 아니어도 OK! 원하는 요일과 시간에 맞춘 유연 근무 매칭
-              플랫폼
-            </p>
+            <p>채용부터 전자 계약까지, 한 번에 연결되는 스마트 업무 플랫폼</p>
             <div class="cta-btn-wrap">
               <a
                 class="cta-btn cta-btn--blackTP cta-btn-wrap"
@@ -154,6 +171,28 @@
     </header>
 
     <main>
+      <section class="cta-banner">
+        <div class="cta-inner">
+          <h2>지금 바로 시작해보세요.</h2>
+          <p>회원가입만으로 모든 기능을 무료로 이용할 수 있습니다.</p>
+
+          <div class="cta-btn-wrap">
+            <a
+              class="cta-btn cta-btn--blue"
+              href="https://web.blueeit.com/support"
+              >지원 문의하기</a
+            >
+            <a
+              class="cta-btn cta-btn--black cta-btn-wrap"
+              href="https://web.blueeit.com/join/signup"
+              style="margin-left: 12px"
+              >무료 가입하기
+              <span class="material-symbols-outlined">arrow_outward</span></a
+            >
+          </div>
+        </div>
+      </section>
+
       <section class="section openjob-service-wrap">
         <h2>누구를 위한 서비스인가요?</h2>
         <div class="features">
@@ -168,8 +207,7 @@
             </div>
             <h3>구직자</h3>
             <p>
-              내가 일할 수 있는 시간과 요일만 등록하면, 조건에 맞는 채용 정보가
-              자동 추천!
+              AI 이력서로 빠르게 준비하고, 적합한 기회를 손쉽게 연결받으세요.
             </p>
           </div>
           <div class="feature">
@@ -181,16 +219,16 @@
                 height="38"
               />
             </div>
-            <h3>채용자</h3>
+            <h3>기업</h3>
             <p>
-              필요한 시간대, 요일에 일할 수 있는 인재만 보기. 시간낭비 없는
-              스마트 채용!
+              인재 탐색부터 전자계약까지 채용을 더 효율적으로 운영할 수
+              있습니다.
             </p>
           </div>
         </div>
       </section>
 
-      <section class="section openjob-airesume-wrap">
+      <section id="section-ai-resume" class="section openjob-airesume-wrap">
         <div class="section-flex">
           <div class="section-txt">
             <h2>AI로 전문가처럼 이력서를 작성해보세요</h2>
@@ -255,8 +293,43 @@
         </div>
       </section>
 
-      <section class="section openjob-contact">
+      <section id="section-recuitment" class="section">
         <div class="section-flex">
+          <div class="section-txt">
+            <div>
+              <div>
+                <h2>
+                  더 체계적인 채용 운영, <br />
+                  블릿 오픈잡에서 시작하세요.
+                </h2>
+                <p>
+                  채용 공고 등록부터 지원자 관리까지 <br />반복되는 업무를
+                  줄이고 효율적인 채용 환경을 제공합니다.
+                </p>
+              </div>
+              <a
+                class="cta-btn cta-btn--blue cta-btn-wrap"
+                href="https://web.blueeit.com/console"
+                style="width: 230px"
+                >채용관리 콘솔
+                <span class="material-symbols-outlined">arrow_outward</span></a
+              >
+            </div>
+          </div>
+          <div class="img-box">
+            <img
+              src="images/common/img-recuitment01.png"
+              alt="openjob-console"
+              width="480"
+              height="320"
+              class="section-img"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="section-contract" class="section openjob-contact">
+        <div class="section-flex" style="margin-bottom: 80px">
           <div class="img-box">
             <img
               src="images/common/img-contact01.png"
@@ -331,30 +404,51 @@
         </div>
       </section>
 
-      <section class="section section-flex openjob-console-wrap">
-        <div class="img-box">
-          <img
-            src="images/common/img-console03.png"
-            alt="openjob-console"
-            width="480"
-            height="320"
-            class="section-img"
-          />
-        </div>
-        <div class="openjob-console-exp section-txt">
-          <div>
-            <h2>모바일에서 어디서나 간편하게<br />PC에서 키보드로 편리하게</h2>
-            <p>
-              <strong>채용관리 콘솔</strong>을 사용해보세요.<br />
-              편리하게 채용을 등록하고, 채용일정을 관리할수 있어요.
-            </p>
-            <a
-              class="cta-btn cta-btn--blue cta-btn-wrap"
-              href="https://web.blueeit.com/console"
-              style="width: 200px"
-              >채용관리 콘솔
-              <span class="material-symbols-outlined">arrow_outward</span></a
-            >
+      <section id="section-schedule-management" class="section">
+        <div class="section-flex">
+          <div class="img-box">
+            <img
+              src="images/common/img-schedule-management01.gif"
+              alt="openjob-console"
+              width="480"
+              height="320"
+              class="section-img"
+            />
+          </div>
+          <div class="section-txt">
+            <div>
+              <div>
+                <h2>
+                  근무 현황부터 휴가 관리까지,<br />
+                  더 쉽고 효율적으로.
+                </h2>
+              </div>
+              <ul class="list">
+                <li class="list-item">
+                  <span class="item-content"
+                    >드래그 앤 드롭으로 근무 일정과 직원 현황을 손쉽게
+                    관리게</span
+                  >
+                </li>
+                <li class="list-item">
+                  <span class="item-content"
+                    >휴가 · 연차 관리까지 간편하게</span
+                  >
+                </li>
+                <li class="list-item">
+                  <span class="item-content"
+                    >효율적인 인력 운영 시스템 지원</span
+                  >
+                </li>
+              </ul>
+              <a
+                class="cta-btn cta-btn--blue cta-btn-wrap"
+                href="https://web.blueeit.com/console"
+                style="width: 230px"
+                >근무스케줄 등록하기
+                <span class="material-symbols-outlined">arrow_outward</span></a
+              >
+            </div>
           </div>
         </div>
       </section>
@@ -365,56 +459,70 @@
           <div class="feature">
             <div class="img-box">
               <img
-                src="images/common/img-feature01.jpg"
+                src="images/common/img-contact01.png"
                 alt="feature"
                 width="300"
                 height="185"
               />
             </div>
-            <h3>유연한 근무시간 매칭</h3>
-            <p>일주일 중 원하는 요일과 시간 단위로 근무 조건 설정 가능</p>
+            <h3>AI 기반 문서 관리</h3>
+            <p>
+              이력서, 계약서, 문서 출력까지 다양한 업무를 더 빠르고 간편하게
+              관리
+            </p>
           </div>
           <div class="feature">
             <div class="img-box">
               <img
-                src="images/common/img-feature02-1.jpg"
+                src="images/common/img-feature01.png"
                 alt="feature"
                 width="300"
                 height="185"
               />
             </div>
-            <h3>실시간 프로필 매칭</h3>
-            <p>구직자와 채용자 간 조건 기반 매칭으로 시간 절약</p>
+            <h3>통합 업무 관리 시스템</h3>
+            <p>
+              프로필, 계약, 지원 현황 등 다양한 업무 흐름을 하나의 플랫폼에서
+              운영
+            </p>
           </div>
           <div class="feature">
             <div class="img-box">
               <img
-                src="images/common/img-feature03.jpg"
+                src="images/common/img-console01.png"
                 alt="feature"
                 width="300"
                 height="185"
               />
             </div>
-            <h3>모바일 중심 UX</h3>
-            <p>언제 어디서나 앱으로 간편하게 프로필 관리 및 채용 진행</p>
+            <h3>언제 어디서나 간편하게</h3>
+            <p>
+              모바일과 웹 환경에 최적화된 UX로 장소 제약 없이 빠른 업무 처리
+              가능
+            </p>
           </div>
         </div>
       </section>
 
       <section class="section section-blue">
-        <h2>지금 시작해 보세요</h2>
-        <p>유연 근무의 미래, 블릿의 <strong>오픈잡</strong>에서 만나보세요.</p>
-        <div class="cta-btn-wrap">
+        <div>
+          <h2>업무의 시작을 더 간단하게</h2>
+          <p>
+            AI 이력서, 전자계약, 채용관리까지 <br />
+            <strong>블릿 오픈잡</strong> 하나로 간편하게.
+          </p>
+        </div>
+        <div class="cta-btn-wrap" style="padding-top: 15px">
           <a
             class="cta-btn cta-btn--blue"
             href="https://web.blueeit.com/support"
-            >문의하기</a
+            >지원 문의하기</a
           >
           <a
             class="cta-btn cta-btn--black cta-btn-wrap"
-            href="#"
+            href="https://web.blueeit.com/join/signup"
             style="margin-left: 12px"
-            >서비스 바로가기
+            >무료 가입하기
             <span class="material-symbols-outlined">arrow_outward</span></a
           >
         </div>

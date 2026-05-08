@@ -18,7 +18,7 @@ body {
 font-family: 'Material Symbols Outlined';
 font-weight: normal;
 font-style: normal;
-font-size: 24px;  /* Preferred icon size */
+font-size: 24px;
 display: inline-block;
 line-height: 1;
 text-transform: none;
@@ -47,9 +47,15 @@ img {
     max-width:100%;
 }
 
+/*버튼 공통사항*/
+.cta-btn-wrap {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
 .cta-btn {
     min-width: 130px;
-    display: block;
     margin-top: 1rem;
     padding: 10px;
     border:0.5px solid #eee;
@@ -132,6 +138,7 @@ img {
     max-width: 300px;
 }
 
+/*header 시작*/
 .hero {
     position:relative;
     height:600px;
@@ -149,6 +156,31 @@ img {
     z-index:-1;
 }
 
+.hero .background-video{
+    position:absolute;
+    top:50%;
+    left:50%;
+    min-width:100%;
+    min-height:100%;
+    height:600px;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    z-index: -2;
+}
+
+.hero .hero-content{
+    text-align: center;
+    margin-top:200px;
+}
+
+.hero .hero-content p {
+    font-size: 1.1rem;
+}
+
+.hero .hero-content .cta-btn {
+    border:0;
+}
+
 .nav-wrap {
     position:fixed;
     top:0;
@@ -161,7 +193,11 @@ img {
     padding: 32px;
     background-color: transparent;
     z-index: 100;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.5s ease;
+}
+
+.nav-wrap:hover{
+    background-color:rgba(40,40,40,0.95);
 }
 
 .nav-wrap.scrolled{
@@ -174,9 +210,46 @@ img {
 }
 
 .nav-wrap nav ul li{
+    position: relative;
     display:inline-block;
-    margin-left:12px;
     font-size:14px;
+    padding: 10px 20px;
+}
+
+.nav-wrap .nav-menu .main-nav:hover {
+    cursor:pointer;
+}
+
+.nav-wrap nav ul li a {
+    display: block;
+    white-space: nowrap;
+}
+
+.nav-wrap  nav .nav-menu-signup {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-weight: 700;
+}
+
+.nav-wrap nav .main-nav .sub-nav {
+    display:none;
+    min-width: 200px;
+    position:absolute;
+    top:50px;
+    left:0;
+    background-color:rgba(40,40,40,0.95);
+    border-radius: 0 0 10px 10px;
+    border-left:1px solid rgba(255,255,255,0.1);
+    padding-left:10px;
+}
+
+.nav-wrap nav .main-nav .sub-nav li{
+    display: block;
+    padding: 15px 20px;
+}
+
+.nav-wrap nav .main-nav .sub-nav li a:hover{
+    color:#7cc4ff;
 }
 
 .nav-wrap .mobile-menu-btn {
@@ -210,37 +283,27 @@ img {
     bottom:0;
 }
 
-.hero .background-video{
-    position:absolute;
-    top:50%;
-    left:50%;
-    min-width:100%;
-    min-height:100%;
-    height:600px;
-    transform: translate(-50%, -50%);
-    object-fit: cover;
-    z-index: -2;
+/* main 시작 */
+.cta-banner {
+background: linear-gradient(
+  to top,
+  rgba(0, 136, 255, 0.18) 10%,
+  rgba(0, 136, 255, 0.12) 40%,
+  rgba(0, 136, 255, 0.05) 70%,
+  #fff 100%
+);
+padding: 100px 20px;
+text-align: center;
 }
 
-.hero .hero-content{
-    text-align: center;
-    margin-top:200px;
+.cta-inner h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
 }
 
-.hero .hero-content p {
-    font-size: 1.1rem;
-}
-
-.cta-btn-wrap {
-    display: flex;
-    justify-content: center;
-    flex-wrap: nowrap;
-    align-items: center;
-    gap: 5px;
-}
-
-.hero .hero-content .cta-btn {
-    border:0;
+.cta-inner p {
+  color: #666;
+  margin-bottom: 30px;
 }
 
 .openjob-service-wrap {
@@ -308,11 +371,8 @@ img {
 
 .openjob-feature-wrap .feature img{
     max-width:100%;
+    border:1px solid #efefef;
     border-radius:3px;
-}
-
-.openjob-contact .section-flex:nth-of-type(1) {
-    margin-bottom:80px;
 }
 
 .openjob-contact .section-flex:nth-of-type(2) .section-txt div{
@@ -320,6 +380,7 @@ img {
     gap:10px;
 }
 
+/* footer 시작 */
 footer {
     display: flex;
     justify-content: space-between;
@@ -329,28 +390,18 @@ footer {
 }
 
 /*모바일 버전*/
-@media (max-width: 468px) {
+@media (max-width: 565px) {
     body {
     font-size: 15px;
-    }
-
-    /* 모바일에서 동영상 없애기 */
-    .background-video {
-        display:none;
-    }
-
-    .hero {
-    width:100%;
-    background:#333 url(../images/common/img-mobile-backgorund01.jpeg) no-repeat center center;
     }
 
     /*nav*/
     .nav-wrap nav{
     display:none;
-    width:88%;
+    width:100%;
     height:100vh;
     position: absolute;
-    top:0;
+    top:100%;
     right:0;
     background-color:#212121;
     }
@@ -360,7 +411,7 @@ footer {
     }
 
     .nav-wrap nav .nav-menu {
-    padding: 70px 0 0 40px;
+    padding: 30px 50px 0 30px;
     }
 
     .nav-wrap .nav-menu li{
@@ -368,8 +419,17 @@ footer {
     margin-bottom: 17px;
     }
 
-    .nav-wrap .nav-menu li:hover {
-    color:#777;
+    .nav-wrap nav .main-nav .sub-nav {
+        min-width:100%;
+        position:static;
+        margin-top: 12px;
+        border-radius: 10px;
+    }
+
+    .nav-menu-signup {
+        color:#7cc4ff;
+        border:1px solid #7cc4ff !important;
+        text-align:center;
     }
 
     .nav-wrap .mobile-menu-btn {
