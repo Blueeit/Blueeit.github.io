@@ -112,7 +112,7 @@ img {
 .section-img{
     max-width:100%;
     height:auto;
-    margin: 20px 0;
+    margin: 20px 0; 
 }
 
 .section-txt{
@@ -170,7 +170,7 @@ img {
 
 .hero .hero-content{
     text-align: center;
-    margin-top:200px;
+    padding:200px 32px 0;
 }
 
 .hero .hero-content p {
@@ -223,12 +223,6 @@ img {
 .nav-wrap nav ul li a {
     display: block;
     white-space: nowrap;
-}
-
-.nav-wrap  nav .nav-menu-signup {
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-weight: 700;
 }
 
 .nav-wrap nav .main-nav .sub-nav {
@@ -310,6 +304,10 @@ text-align: center;
     padding: 5rem 1.5rem 3rem;
 }
 
+.openjob-service-wrap .features {
+    gap:100px;
+}
+
 .openjob-service-wrap img {
     background-color: #eaeff7;
     padding: 6px;
@@ -365,8 +363,9 @@ text-align: center;
     width:210px;
 }
 
-.openjob-service-wrap .features {
-    gap:100px;
+#section-recuitment .section-img {
+    border:1px solid #efefef;
+    border-radius:12px;
 }
 
 .openjob-feature-wrap .feature img{
@@ -424,12 +423,6 @@ footer {
         position:static;
         margin-top: 12px;
         border-radius: 10px;
-    }
-
-    .nav-menu-signup {
-        color:#7cc4ff;
-        border:1px solid #7cc4ff !important;
-        text-align:center;
     }
 
     .nav-wrap .mobile-menu-btn {
