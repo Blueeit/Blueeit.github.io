@@ -65,11 +65,13 @@
     <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script defer src="js/common.js"></script>
 
-    <link rel="stylesheet" href="styles/style.css" />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400&display=swap"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"
     />
+    <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
     <header>
@@ -131,8 +133,10 @@
             <source src="images/video/hero-building.mp4" type="video/mp4" />
           </video>
           <div class="hero-content">
-            <h1>오픈잡 Open Job</h1>
-            <p>채용부터 전자 계약까지, 한 번에 연결되는 스마트 업무 플랫폼</p>
+            <div class="hero-content-txt">
+              <h1>오픈잡 Open Job</h1>
+              <p>채용부터 전자 계약까지, 한 번에 연결되는 스마트 업무 플랫폼</p>
+            </div>
             <div class="cta-btn-wrap">
               <a
                 class="cta-btn cta-btn--blackTP cta-btn-wrap"
@@ -185,9 +189,10 @@
     <main>
       <section class="cta-banner">
         <div class="cta-inner">
-          <h2>지금 바로 시작해보세요.</h2>
-          <p>회원가입만으로 모든 기능을 무료로 이용할 수 있습니다.</p>
-
+          <div class="cta-inner-txt">
+            <h2>지금 바로 시작해보세요.</h2>
+            <p>회원가입만으로 모든 기능을 무료로 이용할 수 있습니다.</p>
+          </div>
           <div class="cta-btn-wrap">
             <a
               class="cta-btn cta-btn--blue"
@@ -405,7 +410,7 @@
               <a
                 class="cta-btn cta-btn--blue cta-btn-wrap"
                 href="https://web.blueeit.com/console"
-                style="width: 230px"
+                style="width: 260px"
                 >전자계약 서비스 경험하기
                 <span>
                   <img
@@ -496,7 +501,7 @@
               <a
                 class="cta-btn cta-btn--blue cta-btn-wrap"
                 href="https://web.blueeit.com/console"
-                style="width: 230px"
+                style="width: 245px"
                 >근무스케줄 등록하기
                 <span>
                   <img

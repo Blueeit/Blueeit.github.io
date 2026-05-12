@@ -7,7 +7,8 @@
 }
 
 body {
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Pretendard', sans-serif;
+    font-weight:400;
     margin: 0;
     padding:0;
     background-color: #f9f9f9;
@@ -35,16 +36,16 @@ img {
 
 /*버튼 공통사항*/
 .cta-btn-wrap {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
 .cta-btn {
     min-width: 130px;
     margin-top: 1rem;
     padding: 10px;
-    border:0.5px solid #eee;
     border-radius: 6px;
     text-decoration: none;
     font-weight: bold;
@@ -159,12 +160,9 @@ img {
     padding:200px 32px 0;
 }
 
-.hero .hero-content p {
-    font-size: 1.1rem;
-}
-
-.hero .hero-content .cta-btn {
-    border:0;
+.hero-content-txt {
+    font-size:18px;
+    font-weight: 600;
 }
 
 .nav-wrap {
@@ -199,6 +197,7 @@ img {
     position: relative;
     display:inline-block;
     font-size:14px;
+    font-weight:500;
     padding: 10px 20px;
 }
 
@@ -276,9 +275,8 @@ padding: 100px 20px;
 text-align: center;
 }
 
-.cta-inner h2 {
-  font-size: 32px;
-  margin-bottom: 10px;
+.cta-inner .cta-inner-txt {
+  font-size: 19px;
 }
 
 .cta-inner p {
