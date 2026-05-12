@@ -1,4 +1,11 @@
 $(document).ready(function () {
+
+    const mobileWidth = 565;
+
+    function isMobiole() {
+        return window.innerWidth <= mobileWidth;
+    }
+
     //스크롤시 nav 배경색 변경
   $(window).on('scroll', function () {
     if ($(window).scrollTop() > 50) {
@@ -9,22 +16,23 @@ $(document).ready(function () {
     }
   });
 
-  //nav 
+  //pc hover
   $('.main-nav').hover(
     function(){
-    if($(window).width() > 565){
+    if(!isMobiole()) {
         $(this).children('.sub-nav').stop().fadeIn(200);
     }
 },
     function() {
-         if($(window).width() > 565){
+         if(!isMobiole()) {
         $(this).children('.sub-nav').stop().fadeOut(200);
         }
     }
   );
 
+  //mobile click
   $('.main-nav:has(.sub-nav)').click(function () {
-    if($(window).width() <= 565) {
+    if(isMobiole()) {
         $(this).children('.sub-nav').stop().slideToggle(200);
     }
   });
@@ -35,16 +43,16 @@ $(document).ready(function () {
   });
 
   $('.nav-menu a').on('click', function() {
-    if($(window).width() <= 565){
+    if(isMobiole()) {
         $('.nav-overlay').removeClass('is-open');
 
         $('.mobile-menu-btn').removeClass('active');
 
         $('.sub-nav').hide();
     }
-  })
+  });
 
-  //nav 베경 클릭 > 닫기
+  //nav overlay click
   $('.nav-overlay').on('click', function() {
     $(this).removeClass('is-open');
     $('.mobile-menu-btn').removeClass('active');
