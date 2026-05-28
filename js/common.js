@@ -63,5 +63,15 @@ $(document).ready(function () {
     e.stopPropagation();
   });
 
+  const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {      // 화면 안에 들어오면
+      entry.target.classList.add('visible');  // .visible 클래스 추가
+    }
+  });
+}, { threshold: 0.1 });  // 요소가 10% 이상 보일 때 발동
+
+// 감지할 요소들에 observer 연결
+document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
   
 });
