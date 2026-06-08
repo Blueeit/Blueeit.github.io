@@ -6,16 +6,6 @@ $(document).ready(function () {
         return window.innerWidth <= mobileWidth;
     }
 
-    //스크롤시 nav 배경색 변경
-  $(window).on('scroll', function () {
-    if ($(window).scrollTop() > 50) {
-      $('#navbar').addClass('scrolled');
-    } else {
-      $('#navbar').removeClass('scrolled');
-
-    }
-  });
-
   //pc hover
   $('.main-nav').hover(
     function(){
