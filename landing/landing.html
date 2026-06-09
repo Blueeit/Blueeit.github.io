@@ -1,0 +1,621 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>블릿 - 우리 회사의 채용 인사관리</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <link rel="stylesheet" href="/landing/styles/style.css" />
+  </head>
+  <body>
+    <!-- PROMO BANNER -->
+    <div class="promo-banner">
+      <div class="promo-banner-inner">
+        <div>
+          <span class="promo-chip">🎉 한정 혜택</span>
+          <span class="promo-banner-text"
+            >지금 회원가입하면 <strong>3개월 무료</strong>로 모든 기능을 이용할
+            수 있어요</span
+          >
+          <a
+            href="https://web.blueeit.com/join/signup"
+            class="promo-banner-btn"
+            target="_blank"
+            >지금 가입하기 →</a
+          >
+        </div>
+        <div class="btn-close">x</div>
+      </div>
+    </div>
+
+    <!-- NAV -->
+    <nav>
+      <a href="../index.html" target="_blank">
+        <img
+          src="../images/common/logo-blueeit-wh.svg"
+          alt="logo"
+          width="120"
+          height="40"
+        />
+      </a>
+      <ul class="nav-links">
+        <li><a href="#workflow">서비스 흐름</a></li>
+        <li><a href="#audience">대상</a></li>
+        <li><a href="#features">특징</a></li>
+      </ul>
+      <a
+        href="https://web.blueeit.com/join/signup"
+        class="nav-cta"
+        target="_blank"
+        >무료 시작 →</a
+      >
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-grid-bg"></div>
+      <div class="blob b1"></div>
+      <div class="blob b2"></div>
+
+      <h1>
+        흩어진 HR 업무,<br />이제 <span class="hl">오픈잡</span>에서 한번에
+      </h1>
+      <p class="hero-sub">
+        채용 공고부터 근로계약, 근무 스케줄, GPS 출퇴근까지.<br />HR의 모든
+        과정이 끊기지 않고 하나로 이어집니다.
+      </p>
+      <div class="hero-btns">
+        <a
+          href="https://web.blueeit.com/join/signup"
+          class="btn-main"
+          target="_blank"
+          >무료로 시작하기 →</a
+        >
+        <a
+          href="https://web.blueeit.com/support"
+          class="btn-outline"
+          target="_blank"
+          >도입 문의</a
+        >
+      </div>
+
+      <div class="hero-promo">
+        <div class="hero-promo-icon">🎁</div>
+        <div class="hero-promo-text">
+          <div class="hero-promo-label">지금만 특별 혜택</div>
+          <div class="hero-promo-head">
+            지금 회원가입하면 <em>3개월 무료!</em>
+          </div>
+        </div>
+        <a
+          href="https://web.blueeit.com/join/signup"
+          class="hero-promo-btn"
+          target="_blank"
+          >지금 가입하기 →</a
+        >
+      </div>
+    </section>
+
+    <!-- WORKFLOW -->
+    <section class="workflow-section" id="workflow">
+      <div class="wf-container">
+        <div class="wf-header reveal">
+          <div class="section-eyebrow">Workflow</div>
+          <h2 class="section-title">이렇게 이어집니다</h2>
+          <p class="section-sub">
+            채용부터 출퇴근까지, 4단계가 자연스럽게 하나의 흐름으로 연결돼요.
+          </p>
+        </div>
+
+        <div class="wf-steps">
+          <!-- STEP 1 -->
+          <div class="wf-step s1 reveal">
+            <div class="wf-visual">
+              <div class="mock-job">
+                <div class="mock-job-header">
+                  <div class="mock-job-co">블릿 주식회사</div>
+                  <div class="mock-job-title">프론트엔드 개발자 채용</div>
+                  <div class="mock-job-pills">
+                    <span class="mock-pill blue">정규직</span>
+                    <span class="mock-pill green">경력 2년↑</span>
+                    <span class="mock-pill gray">서울 · 재택 가능</span>
+                  </div>
+                </div>
+                <div class="mock-job-header">
+                  <div class="mock-job-co">에이아이랩스</div>
+                  <div class="mock-job-title">React 프론트엔드 개발자</div>
+                  <div class="mock-job-pills">
+                    <span class="mock-pill blue">정규직</span>
+                    <span class="mock-pill green">경력 5년↑</span>
+                    <span class="mock-pill gray">판교 · 재택 가능</span>
+                  </div>
+                </div>
+                <div class="mock-job-header">
+                  <div class="mock-job-co">브릿지커머스</div>
+                  <div class="mock-job-title">웹 퍼블리셔(UI 개발)</div>
+                  <div class="mock-job-pills">
+                    <span class="mock-pill blue">정규직</span>
+                    <span class="mock-pill green">경력 무관</span>
+                    <span class="mock-pill gray">서울 · 마포구</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="wf-connector">
+              <div class="wf-connector-line"></div>
+              <div class="wf-connector-dot">→</div>
+              <div class="wf-connector-line"></div>
+            </div>
+
+            <div class="wf-text">
+              <div class="wf-step-badge">
+                <div class="wf-step-num">01</div>
+                Recruitment
+              </div>
+              <div class="wf-step-title">채용 공고 등록<br />& 지원자 관리</div>
+              <div class="wf-step-desc">
+                공고를 올리면 지원자가 모여요. 서류 검토부터 합격 처리까지 채용
+                전 과정을 콘솔 하나에서 관리해요.
+              </div>
+              <div class="wf-pills">
+                <span class="wf-pill">공고 등록</span>
+                <span class="wf-pill">지원자 관리</span>
+                <span class="wf-pill">합격 처리</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="wf-separator">
+            <div class="wf-sep-line"></div>
+            <div class="wf-sep-icon">↓</div>
+            <div class="wf-sep-line"></div>
+          </div>
+
+          <!-- STEP 2 -->
+          <div class="wf-step s2 reverse reveal">
+            <div class="wf-visual">
+              <div class="mock-contract">
+                <div class="mock-contract-header">
+                  <div class="mock-contract-icon">📋</div>
+                  <div>
+                    <div class="mock-contract-title">
+                      수습기간이 있는 정규직 근로계약서
+                    </div>
+                    <div class="mock-contract-sub">블릿 주식회사 · 박지호</div>
+                  </div>
+                  <div class="mock-contract-badge">전자서명</div>
+                </div>
+                <div class="mock-contract-header">
+                  <div class="mock-contract-icon">📋</div>
+                  <div>
+                    <div class="mock-contract-title">
+                      수습기간이 없는 계약직(기간제) 근로계약서
+                    </div>
+                    <div class="mock-contract-sub">블릿 주식회사 · 박지호</div>
+                  </div>
+                  <div class="mock-contract-badge">전자서명</div>
+                </div>
+                <div class="mock-contract-header">
+                  <div class="mock-contract-icon">📋</div>
+                  <div>
+                    <div class="mock-contract-title">
+                      단시간(아르바이트) 근로계약서
+                    </div>
+                    <div class="mock-contract-sub">블릿 주식회사 · 박지호</div>
+                  </div>
+                  <div class="mock-contract-badge">전자서명</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="wf-connector">
+              <div class="wf-connector-line"></div>
+              <div class="wf-connector-dot">→</div>
+              <div class="wf-connector-line"></div>
+            </div>
+
+            <div class="wf-text">
+              <div class="wf-step-badge">
+                <div class="wf-step-num">02</div>
+                E-Contract
+              </div>
+              <div class="wf-step-title">근로계약서<br />전자 서명</div>
+              <div class="wf-step-desc">
+                합격자와 바로 근로계약서를 작성하고 모바일로 서명받아요. 종이
+                없이 법적 효력이 있는 계약이 바로 체결돼요.
+              </div>
+              <div class="wf-pills">
+                <span class="wf-pill">근로계약서</span>
+                <span class="wf-pill">모바일 서명</span>
+                <span class="wf-pill">법적 효력</span>
+                <span class="wf-pill">감사추적 인증</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="wf-separator">
+            <div class="wf-sep-line"></div>
+            <div class="wf-sep-icon">↓</div>
+            <div class="wf-sep-line"></div>
+          </div>
+
+          <!-- STEP 3 -->
+          <div class="wf-step s3 reveal">
+            <div class="wf-visual">
+              <div class="mock-schedule">
+                <h4>직원관리<span>›</span>근무 스케줄</h4>
+                <div class="mock-sch-header">
+                  <div class="mock-sch-nav">
+                    <div class="mock-sch-nav-btn">‹</div>
+                    <div class="mock-sch-month">2025년 6월</div>
+                    <div class="mock-sch-nav-btn">›</div>
+                  </div>
+                  <div class="mock-sch-team">
+                    <span>대외ITO / 블릿 오픈잡</span> 근무 스케줄
+                  </div>
+                  <div class="mock-shc-ico">
+                    <span>🌴</span>
+                    <span>📑</span>
+                    <span>🚪</span>
+                  </div>
+                </div>
+                <div class="mock-sch-content">
+                  <div class="mock-cal-grid">
+                    <div class="mock-cal-day-label">일</div>
+                    <div class="mock-cal-day-label">월</div>
+                    <div class="mock-cal-day-label">화</div>
+                    <div class="mock-cal-day-label">수</div>
+                    <div class="mock-cal-day-label">목</div>
+                    <div class="mock-cal-day-label">금</div>
+                    <div class="mock-cal-day-label">토</div>
+                    <div class="mock-cal-cell off weekend">1</div>
+                    <div class="mock-cal-cell has-bar bar-blue">2</div>
+                    <div class="mock-cal-cell has-bar bar-green">3</div>
+                    <div class="mock-cal-cell has-bar bar-blue">4</div>
+                    <div class="mock-cal-cell has-bar bar-amber">5</div>
+                    <div class="mock-cal-cell has-bar bar-green">6</div>
+                    <div class="mock-cal-cell off weekend">7</div>
+                    <div class="mock-cal-cell off weekend">8</div>
+                    <div class="mock-cal-cell has-bar bar-blue">9</div>
+                    <div class="mock-cal-cell today">10</div>
+                    <div class="mock-cal-cell has-bar bar-green">11</div>
+                    <div class="mock-cal-cell has-bar bar-blue">12</div>
+                    <div class="mock-cal-cell has-bar bar-amber">13</div>
+                    <div class="mock-cal-cell off weekend">14</div>
+                    <div class="mock-cal-cell off weekend">15</div>
+                    <div class="mock-cal-cell">16</div>
+                    <div class="mock-cal-cell has-bar bar-green">17</div>
+                    <div class="mock-cal-cell has-bar bar-blue">18</div>
+                    <div class="mock-cal-cell">19</div>
+                    <div class="mock-cal-cell has-bar bar-green">20</div>
+                    <div class="mock-cal-cell off weekend">21</div>
+                  </div>
+                  <div class="mock-staff-rows">
+                    <div class="mock-staff-row">
+                      <div
+                        class="mock-staff-avatar"
+                        style="
+                          background: rgba(37, 99, 235, 0.12);
+                          color: var(--c1);
+                        "
+                      >
+                        김
+                      </div>
+                      <div class="mock-staff-name">김민준</div>
+                    </div>
+                    <div class="mock-staff-row">
+                      <div
+                        class="mock-staff-avatar"
+                        style="
+                          background: rgba(5, 150, 105, 0.12);
+                          color: var(--c2);
+                        "
+                      >
+                        박
+                      </div>
+                      <div class="mock-staff-name">박지호</div>
+                    </div>
+                    <div class="mock-staff-row">
+                      <div
+                        class="mock-staff-avatar"
+                        style="
+                          background: rgba(217, 119, 6, 0.12);
+                          color: var(--c3);
+                        "
+                      >
+                        이
+                      </div>
+                      <div class="mock-staff-name">이서연</div>
+                    </div>
+                    <div class="mock-staff-row">
+                      <div
+                        class="mock-staff-avatar"
+                        style="
+                          background: rgba(217, 119, 6, 0.12);
+                          color: var(--c4);
+                        "
+                      >
+                        이
+                      </div>
+                      <div class="mock-staff-name">이지현</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="wf-connector">
+              <div class="wf-connector-line"></div>
+              <div class="wf-connector-dot">→</div>
+              <div class="wf-connector-line"></div>
+            </div>
+
+            <div class="wf-text">
+              <div class="wf-step-badge">
+                <div class="wf-step-num">03</div>
+                Schedule
+              </div>
+              <div class="wf-step-title">근무 스케줄<br />관리</div>
+              <div class="wf-step-desc">
+                팀 전체의 근무 일정을 한눈에 파악하고, 휴가·연차 현황도
+                실시간으로 확인할 수 있어요. 일정이 바뀌어도 바로 수정하고,
+                엑셀파일 출력도 해보세요.
+              </div>
+              <div class="wf-pills">
+                <span class="wf-pill">휴가·연차</span>
+                <span class="wf-pill">인력 현황</span>
+                <span class="wf-pill">드래그 배치</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="wf-separator">
+            <div class="wf-sep-line"></div>
+            <div class="wf-sep-icon">↓</div>
+            <div class="wf-sep-line"></div>
+          </div>
+
+          <!-- STEP 4 -->
+          <div class="wf-step s4 reverse reveal">
+            <div class="wf-visual">
+              <div class="mock-gps">
+                <div class="mock-gps-map">
+                  <div class="mock-map-grid"></div>
+                  <!-- roads -->
+                  <div class="mock-map-road-h" style="top: 45%"></div>
+                  <div class="mock-map-road-h" style="top: 70%"></div>
+
+                  <div class="mock-map-road-v" style="left: 65%"></div>
+                  <!-- buildings -->
+                  <div
+                    class="mock-map-building"
+                    style="width: 50px; height: 38px; top: 12%; left: 8%"
+                  ></div>
+                  <div
+                    class="mock-map-building"
+                    style="width: 38px; height: 50px; top: 10%; left: 22%"
+                  ></div>
+                  <div
+                    class="mock-map-building"
+                    style="width: 55px; height: 32px; top: 30%; left: 75%"
+                  ></div>
+                  <div
+                    class="mock-map-building"
+                    style="width: 42px; height: 44px; top: 55%; left: 70%"
+                  ></div>
+                  <div
+                    class="mock-map-building"
+                    style="width: 48px; height: 36px; top: 75%; left: 8%"
+                  ></div>
+                  <!-- GPS ring -->
+                  <div
+                    class="mock-gps-ring"
+                    style="
+                      width: 70px;
+                      height: 70px;
+                      left: 50%;
+                      top: 45%;
+                      transform: translate(-50%, -50%);
+                    "
+                  ></div>
+                  <div
+                    class="mock-gps-ring"
+                    style="
+                      width: 48px;
+                      height: 48px;
+                      left: 50%;
+                      top: 45%;
+                      transform: translate(-50%, -50%);
+                      animation-delay: 0.5s;
+                    "
+                  ></div>
+                  <!-- pin -->
+                  <div class="mock-gps-pin" style="left: 50%; top: 45%">
+                    <div class="mock-gps-dot"></div>
+                  </div>
+                </div>
+                <div class="mock-gps-bottom">
+                  <div class="mock-gps-row">
+                    <div class="mock-gps-name">📍 블릿 주식회사</div>
+                    <div class="mock-gps-time">09:02 AM</div>
+                  </div>
+                </div>
+              </div>
+              <div><h1 class="mock-gps-meter">허용범위 500m</h1></div>
+            </div>
+
+            <div class="wf-connector">
+              <div class="wf-connector-line"></div>
+              <div class="wf-connector-dot">→</div>
+              <div class="wf-connector-line"></div>
+            </div>
+
+            <div class="wf-text">
+              <div class="wf-step-badge">
+                <div class="wf-step-num">04</div>
+                Attendance
+              </div>
+              <div class="wf-step-title">GPS 출퇴근<br />기록</div>
+              <div class="wf-step-desc">
+                앱 하나로 출퇴근을 기록하면 끝. GPS 위치 기반으로 부정 출근을
+                차단하고, 엑셀 보고서도 자동으로 만들어줘요.
+              </div>
+              <div class="wf-pills">
+                <span class="wf-pill">GPS 인증</span>
+                <span class="wf-pill">자동 알림</span>
+                <span class="wf-pill">엑셀 보고서</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AUDIENCE -->
+    <section class="content-section" id="audience">
+      <div class="container">
+        <div class="reveal">
+          <div class="section-eyebrow">For who</div>
+          <h2 class="section-title">누구에게 필요한가요?</h2>
+        </div>
+        <div class="audience-grid">
+          <div class="aud-card reveal">
+            <div class="aud-emoji">🙋</div>
+            <h3>구직자라면</h3>
+            <p>
+              채용 공고를 확인하고, 합격 후 모바일로 근로계약서에 서명까지
+              간편하게.
+            </p>
+            <ul class="check-list">
+              <li>원하는 공고에 바로 지원</li>
+              <li>합격 후 근로계약서 모바일 서명</li>
+              <li>앱으로 출퇴근 기록 간편하게</li>
+              <li>근무 스케줄 실시간 확인</li>
+            </ul>
+          </div>
+          <div class="aud-card reveal">
+            <div class="aud-emoji">🏢</div>
+            <h3>기업이라면</h3>
+            <p>
+              채용, 계약, 근태 관리를 각각 다른 툴로 쓰던 번거로움을 없애줘요.
+            </p>
+            <ul class="check-list">
+              <li>채용 공고 등록부터 합격 관리까지</li>
+              <li>근로계약서 전자계약으로 빠른 온보딩</li>
+              <li>직원 근무 스케줄 드래그로 배치</li>
+              <li>GPS 기반 출퇴근 자동 기록</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="content-section feat-section" id="features">
+      <div class="container">
+        <div class="reveal">
+          <div class="section-eyebrow">Why Blueeit</div>
+          <h2 class="section-title">왜 오픈잡인가요?</h2>
+        </div>
+        <div class="feat-grid">
+          <div class="feat-card reveal">
+            <div class="feat-icon">🔗</div>
+            <h3>끊기지 않는 흐름</h3>
+            <p>채용 → 계약 → 근태가 하나로 이어져요.</p>
+          </div>
+          <div class="feat-card reveal">
+            <div class="feat-icon">📱</div>
+            <h3>모바일 최적화</h3>
+            <p>서명, 출퇴근, 스케줄 확인 모두 앱 하나로.</p>
+          </div>
+          <div class="feat-card reveal">
+            <div class="feat-icon">⚖️</div>
+            <h3>법적 효력 계약</h3>
+            <p>감사추적 인증서로 종이보다 강력한 전자계약.</p>
+          </div>
+          <div class="feat-card reveal">
+            <div class="feat-icon">📍</div>
+            <h3>GPS 근태 관리</h3>
+            <p>미터 단위 설정으로 부정 출퇴근 원천 차단.</p>
+          </div>
+          <div class="feat-card reveal">
+            <div class="feat-icon">📊</div>
+            <h3>자동 엑셀 보고서</h3>
+            <p>근태 데이터가 자동으로 정리된 보고서로.</p>
+          </div>
+          <div class="feat-card reveal">
+            <div class="feat-icon">🆓</div>
+            <h3>회원가입 혜택</h3>
+            <p>지금 회원가입 시, 3개월 무료 이용.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="bottom-cta">
+      <div class="cta-b1"></div>
+      <div class="cta-b2"></div>
+      <div class="cta-inner reveal">
+        <h2>지금 바로 시작해보세요</h2>
+        <p>
+          복잡한 HR, 이제 오픈잡에 맡기세요.<br />회원가입만으로 모든 기능을
+          무료로 이용할 수 있어요.
+        </p>
+        <div class="cta-btns">
+          <a
+            href="https://web.blueeit.com/join/signup"
+            class="btn-main"
+            target="_blank"
+            >무료 가입하기 →</a
+          >
+          <a
+            href="https://web.blueeit.com/support"
+            class="btn-outline"
+            target="_blank"
+            >도입 문의</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div>
+        <ul>
+          <li>
+            <span style="color: #c9dbff">(주)블릿</span> 대표이사 : 김기영 |
+            사업자 등록번호 : 288-81-00948
+          </li>
+          <li>support@blueeit.com</li>
+        </ul>
+      </div>
+      <div class="footer-copyright">
+        &copy; 2025 Blueeit 블릿. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      const reveals = document.querySelectorAll(".reveal");
+      const io = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e, i) => {
+            if (e.isIntersecting) {
+              setTimeout(() => e.target.classList.add("visible"), i * 60);
+              io.unobserve(e.target);
+            }
+          });
+        },
+        { threshold: 0.08 },
+      );
+      reveals.forEach((el) => io.observe(el));
+
+      document.querySelector(".promo-banner-inner .btn-close").onclick = () => {
+        document.querySelector(".promo-banner").style.display = "none";
+      };
+    </script>
+  </body>
+</html>
