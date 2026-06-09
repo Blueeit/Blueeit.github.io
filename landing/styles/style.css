@@ -132,6 +132,10 @@ backdrop-filter: blur(16px);
 border-bottom: 1px solid var(--border);
 }
 
+nav .logo-link {
+    display:inline-flex;
+}
+
 .nav-links {
 display: flex;
 align-items: center;
@@ -173,11 +177,12 @@ flex-direction: column;
 align-items: center;
 justify-content: center;
 text-align: center;
-padding: 6rem 2rem 5rem;
+padding:3rem 2rem;
 position: relative;
 overflow: hidden;
 background: var(--bg);
 }
+
 .hero-grid-bg {
 position: absolute;
 inset: 0;
@@ -234,6 +239,7 @@ margin-bottom: 1.8rem;
 position: relative;
 animation: fadeUp 0.5s ease both;
 }
+
 .hero-badge::before {
 content: "";
 width: 6px;
@@ -289,15 +295,6 @@ position: relative;
 animation: fadeUp 0.5s 0.14s ease both;
 }
 
-.hero-btns {
-display: flex;
-gap: 10px;
-justify-content: center;
-flex-wrap: wrap;
-position: relative;
-animation: fadeUp 0.5s 0.21s ease both;
-}
-
 .btn-main {
 font-size: 14px;
 font-weight: 600;
@@ -333,7 +330,7 @@ background: var(--bg2);
 /* HERO PROMO CARD */
 .hero-promo {
 position: relative;
-margin-top: 3.5rem;
+margin-top: 28px;
 z-index: 1;
 display: flex;
 align-items: center;
@@ -343,7 +340,7 @@ justify-content: center;
 background: linear-gradient(135deg, #eff6ff, #f5f3ff);
 border: 1px solid rgba(37, 99, 235, 0.16);
 border-radius: 18px;
-padding: 1.25rem 2rem;
+padding: 20px 55px;
 animation: fadeUp 0.5s 0.28s ease both;
 }
 
@@ -428,6 +425,7 @@ margin: 0 auto;
 text-align: center;
 margin-bottom: 5rem;
 }
+
 .section-eyebrow {
 font-size: 11px;
 font-weight: 700;
@@ -1062,6 +1060,12 @@ text-transform: uppercase;
 margin-bottom: 0.9rem;
 }
 
+.wf-step-badge .wf-step-num {
+    display:none;
+    width:25px;
+    height:25px;
+}
+
 .s1 .wf-step-num {
 background: rgba(37, 99, 235, 0.12);
 color: var(--c1);
@@ -1106,11 +1110,13 @@ color: var(--text2);
 line-height: 1.75;
 margin-bottom: 1rem;
 }
+
 .wf-pills {
 display: flex;
 flex-wrap: wrap;
 gap: 5px;
 }
+
 .wf-pill {
 font-size: 11px;
 font-weight: 500;
@@ -1118,6 +1124,7 @@ padding: 4px 11px;
 border-radius: 100px;
 border: 1px solid;
 }
+
 .s1 .wf-pill {
 background: rgba(37, 99, 235, 0.07);
 color: var(--c1);
@@ -1385,6 +1392,14 @@ transform: none;
 }
 
 @media (max-width: 720px) {
+.promo-banner {
+    display:none;
+}
+
+.wf-step-badge .wf-step-num {
+    display:inline-flex;
+}
+
 .wf-step {
 grid-template-columns: 1fr;
 }
@@ -1398,9 +1413,7 @@ direction: ltr;
 .feat-grid {
 grid-template-columns: 1fr;
 }
-.nav-links {
-display: none;
-}
+
 .hero-promo {
 flex-direction: column;
 text-align: center;
