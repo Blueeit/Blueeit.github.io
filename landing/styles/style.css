@@ -73,8 +73,7 @@ justify-content: center;
 }
 
 .promo-banner-inner .btn-close {
-color:var(--text3);
-font-size:17px;
+font-size:12px;
 cursor:pointer;
 }
 
