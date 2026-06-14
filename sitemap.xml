@@ -26,6 +26,14 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- 뉴스피드 -->
+  <url>
+    <loc>https://www.blueeit.com/landing/landing.html</loc>
+    <lastmod>2025-04-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+
   <!-- 지원 / 문의 페이지 -->
   <url>
     <loc>https://web.blueeit.com/support</loc>
