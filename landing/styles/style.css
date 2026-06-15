@@ -1400,8 +1400,16 @@ nav{
     padding:0 7px;
 }
 
+nav .nav-btn-arrow {
+    display: none;
+}
+
 .nav-links {
     gap:8px;
+}
+
+.nav-links a {
+    font-size:12px;
 }
 
 .nav-cta {
